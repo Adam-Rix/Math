@@ -24,21 +24,21 @@ def aizawa_transform(val):
 
     return t
 
-# Инициализация начальной точки
+# Initialization of the initial point
 x0, y0, z0 = 0.1, 0.1, 0.1
 points = [[x0, y0, z0]]
 
-# Вычисление последовательности точек с помощью преобразования Айзавы
+# Computing a sequence of points using the Aizawa transformation
 for _ in range(num_steps):
     point = aizawa_transform(points[-1])
     points.append(point)
 
-# Разделение координат точек
+# Separation of point coordinates
 x = [point[0] for point in points]
 y = [point[1] for point in points]
 z = [point[2] for point in points]
 
-# Визуализация траектории точек
+# Visualization
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(x, y, z)
