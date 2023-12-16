@@ -16,9 +16,9 @@ Each model is accompanied by code for generating the model's trajectory and visu
 
 # Results
 - Aizawa Attr
-- 
+ 
 ![Aizawa Attr](https://github.com/Adam-Rix/Math/assets/113460620/48a630d8-e50b-456b-8d82-8976b3e8d608)
 - Thomas Attr
--
+
 ![Thomas Attr](https://github.com/Adam-Rix/Math/assets/113460620/3a02fe07-3b3e-4073-bb28-dfd8d1cfcd57)
 
