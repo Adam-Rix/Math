@@ -11,17 +11,17 @@ d = 0.32
 e = 0.1
 f = 0.8
 
-# Инициализация начальной точки
+# Initialization of the starting point
 x = np.zeros(num_points)
 y = np.zeros(num_points)
 z = np.zeros(num_points)
 
-# Начальные значения координат
+# Initial coordinate values
 x[0] = 0.1
 y[0] = 0.1
 z[0] = 0.1
 
-# Вычисление последовательности точек
+# Calculation of the sequence of points
 for i in range(1, num_points):
     x1 = (z[i-1] - b) * x[i-1] - d * y[i-1]
     y1 = d * x[i-1] + (z[i-1] - b) * y[i-1]
@@ -30,7 +30,7 @@ for i in range(1, num_points):
     y[i] = y[i-1] + dt * y1
     z[i] = z[i-1] + dt * z1
 
-# Визуализация аттрактора
+# Visualization of the attractor
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot(x, y, z, '.', markersize=0.5)
